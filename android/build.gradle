@@ -1,0 +1,31 @@
+buildscript {
+    repositories {
+        google() // Google's Maven repository for Android tools
+        mavenCentral() // Central repository for dependencies
+    }
+    dependencies {
+        classpath "com.android.tools.build:gradle:7.3.0" // Adjust based on your Flutter version
+        classpath "com.google.gms:google-services:4.3.14" // For Firebase if used
+    }
+}
+
+allprojects {
+    repositories {
+        google() // Google's Maven repository
+        mavenCentral() // Central repository for dependencies
+        maven { url "https://jitpack.io" } // Required for some third-party plugins
+    }
+}
+
+// Define build directory for the project
+rootProject.buildDir = "../build"
+
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+    project.evaluationDependsOn(":app")
+}
+
+// Add a task to clean the project
+tasks.register("clean", Delete) {
+    delete rootProject.buildDir
+}

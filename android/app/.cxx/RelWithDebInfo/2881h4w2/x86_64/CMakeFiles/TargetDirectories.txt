@@ -1,0 +1,2 @@
+D:/new_learning/lotusandgems/lotusandgems/android/app/.cxx/RelWithDebInfo/2881h4w2/x86_64/CMakeFiles/edit_cache.dir
+D:/new_learning/lotusandgems/lotusandgems/android/app/.cxx/RelWithDebInfo/2881h4w2/x86_64/CMakeFiles/rebuild_cache.dir

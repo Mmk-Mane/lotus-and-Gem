@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "548210284023",
+    "project_id": "lotusgems-1ed4f",
+    "storage_bucket": "lotusgems-1ed4f.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:548210284023:android:c0c98e5bf083eb3af8caf2",
+        "android_client_info": {
+          "package_name": "com.example.lotusandgems"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDeAebfXJZ_gYpNRK9WO7DvgwxuQURRp3s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
