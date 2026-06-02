@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:lotusandgems/firebase/auth_provider.dart' as myAuth;
 import 'package:lotusandgems/screens/bottomNavigationpage.dart';
 import 'package:lotusandgems/screens/email_verification_screen.dart';
-import 'package:lotusandgems/screens/singup_page.dart';
+import 'package:lotusandgems/screens/signup_page.dart';
 import 'package:lotusandgems/utils/constants/colors.dart';
 import 'package:lotusandgems/utils/constants/image_strings.dart';
 import 'package:lotusandgems/utils/constants/sizes.dart';
@@ -42,7 +42,7 @@ class _LoginScreenState extends State<LoginScreen> {
     final email = _usernameController.text.trim();
     final password = _passwordController.text.trim();
 
-    final success = await authProvider.loginWithEmail(email, password, context);
+    final success = await authProvider.loginWithEmail(email, password);
 
     if (success) {
       final user = FirebaseAuth.instance.currentUser;
@@ -56,6 +56,15 @@ class _LoginScreenState extends State<LoginScreen> {
         Navigator.pushReplacement(
           context,
           MaterialPageRoute(builder: (_) => const EmailVerificationScreen()),
+        );
+      }
+    } else {
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(authProvider.errorMessage ?? "Login failed"),
+            backgroundColor: MKColors.error,
+          ),
         );
       }
     }

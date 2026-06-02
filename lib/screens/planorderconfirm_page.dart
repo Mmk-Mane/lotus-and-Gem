@@ -1,10 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:lotusandgems/data/userinfor_provider.dart';
-import 'package:intl/intl.dart';
-import 'package:lotusandgems/screens/transcation_page.dart';
+import 'package:lotusandgems/data/user_info_provider.dart';
 import 'package:lotusandgems/utils/constants/image_strings.dart';
 import 'package:lotusandgems/widgets/customappbar.dart';
-import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'package:lotusandgems/utils/constants/colors.dart';
 import 'package:lotusandgems/utils/constants/sizes.dart';
 import 'package:lotusandgems/widgets/customelevatedbutton.dart';

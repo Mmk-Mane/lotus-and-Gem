@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lotusandgems/airtable/airtable_provider.dart';
-import 'package:lotusandgems/data/userinfor_provider.dart';
+import 'package:lotusandgems/data/user_info_provider.dart';
 import 'package:lotusandgems/firebase/auth_provider.dart';
 
 import 'package:provider/provider.dart';

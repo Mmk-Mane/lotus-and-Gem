@@ -49,7 +49,6 @@ class _SignUpScreenState extends State<SignUpScreen> {
     final result = await authProvider.signUpWithEmail(
        _emailController.text.trim(),
        _passwordController.text.trim(),
-      context,
     );
 
     setState(() => _isLoading = false);
@@ -60,9 +59,14 @@ class _SignUpScreenState extends State<SignUpScreen> {
         MaterialPageRoute(builder: (_) => const EmailVerificationScreen()),
       );
     } else {
-      ScaffoldMessenger.of(context).showSnackBar(
-        SnackBar(content: Text(result.toString() ?? "Signup failed")),
-      );
+      if (mounted) {
+        ScaffoldMessenger.of(context).showSnackBar(
+          SnackBar(
+            content: Text(authProvider.errorMessage ?? "Signup failed"),
+            backgroundColor: MKColors.error,
+          ),
+        );
+      }
     }
   }
 

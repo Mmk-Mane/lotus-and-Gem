@@ -4,12 +4,12 @@ import 'package:lotusandgems/airtable/services/airtable_service.dart';
 import 'package:lotusandgems/airtable/services/model/AmountBasedPlanModel.dart';
 import 'package:lotusandgems/airtable/services/model/EMIPayment.dart';
 import 'package:lotusandgems/airtable/services/model/WeightBasedPlan.dart';
-import 'package:lotusandgems/data/userinfo_cass.dart';
+import 'package:lotusandgems/data/user_info.dart';
 import 'package:lotusandgems/screens/success_screen.dart';
 import 'package:provider/provider.dart';
 import 'package:razorpay_flutter/razorpay_flutter.dart';
 import 'package:lotusandgems/utils/constants/colors.dart';
-import 'package:lotusandgems/data/userinfor_provider.dart';
+import 'package:lotusandgems/data/user_info_provider.dart';
 import 'package:lotusandgems/airtable/airtable_config.dart';
 
 import '../airtable/airtable_provider.dart';

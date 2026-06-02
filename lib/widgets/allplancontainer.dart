@@ -4,7 +4,7 @@ import 'package:lotusandgems/screens/existingplan_page.dart';
 import 'package:lotusandgems/screens/plan_list_page.dart';
 import 'package:lotusandgems/screens/myplan_page.dart';
 import 'package:lotusandgems/screens/profile_page.dart';
-import 'package:lotusandgems/screens/transcation_page.dart';
+import 'package:lotusandgems/screens/transaction_page.dart';
 import 'package:lotusandgems/utils/constants/colors.dart';
 import 'package:lotusandgems/utils/constants/device_utility.dart';
 import 'package:lotusandgems/utils/constants/sizes.dart';

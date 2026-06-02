@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:lotusandgems/data/userinfor_provider.dart';
+import 'package:lotusandgems/data/user_info_provider.dart';
 import 'package:lotusandgems/screens/planorderconfirm_page.dart';
 import 'package:lotusandgems/utils/constants/colors.dart';
 import 'package:lotusandgems/utils/constants/image_strings.dart';

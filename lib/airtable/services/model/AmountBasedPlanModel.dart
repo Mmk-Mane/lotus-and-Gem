@@ -1,4 +1,4 @@
-import 'package:lotusandgems/data/userinfo_cass.dart';
+import 'package:lotusandgems/data/user_info.dart';
 
 class AmountBasedPlan {
   String groupId;
